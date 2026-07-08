@@ -1,2 +1,15 @@
 # ai-lang-tutor-poc
-The AI Agent project targets Slavic-English grammatical "fault lines" like the copula gap. Using a system prompt that mandates metalinguistic feedback and Vygotskian scaffolding , the agent prioritizes L1 mediation. Technical development involves GDPR-compliant, logged interactions to allow for quantitative and qualitative research.
+AI-Mediated Language Learning Agent
+This project is an AI-driven tool for Slavic-English grammatical acquisition. It focuses on "fault lines" like the copula gap, article usage, and aspect mapping.
+
+Pedagogical Model
+L1 Mediation: Uses familiar linguistic frameworks to explain concepts.
+
+Metalinguistic Feedback: Provides contrastive analysis rather than direct corrections.
+
+Scaffolding: Operates within the Zone of Proximal Development (ZPD) to encourage autonomy.
+
+Research & Deployment
+Compliance: Uses a secure, GDPR-compliant sandbox.
+
+Data: Captures logs for quantitative evaluation and qualitative triangulation.
