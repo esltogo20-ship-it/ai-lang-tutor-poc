@@ -35,6 +35,10 @@ Raw conversational data and derived analytical metadata should be logically sepa
 
 [ETHICS_AND_PRIVACY.md](ETHICS_AND_PRIVACY.md) records design requirements for later institutional deployment. It does not certify that a GDPR-compliant environment, consent workflow, pseudonymization service, logging system or model-governance process has already been implemented.
 
+## Roadmap
+
+The ordered Scrum backlog, minimum functional-POC gate and research-oriented definition of done are maintained in [`PRODUCT_BACKLOG.md`](PRODUCT_BACKLOG.md).
+
 ## Planned development
 
 1. Specify versioned instructional modules and trigger/fading rules.
