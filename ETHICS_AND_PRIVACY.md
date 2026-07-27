@@ -1,13 +1,50 @@
-# Research Ethics and Privacy Standards
+# Planned Research Ethics and Privacy Requirements
 
-This project adheres to strict pedagogical and ethical standards to ensure participant safety and data integrity throughout the AI-mediated language intervention.
+This document specifies safeguards for a **future research instrument and intervention**. It does not certify that the present repository is a GDPR-compliant deployment environment or that the listed technical controls have already been implemented.
 
-### Core Ethical Commitments
-*   **GDPR Compliance**: All AI interactions occur within a secure, GDPR-compliant API environment to protect participant privacy.
-*   **Data Pseudonymization**: All collected data is pseudonymized to ensure that individual learner identities remain protected throughout the research process.
-*   **Localized Ethic**: The AI agent operates under a trauma-informed pedagogical model, ensuring all feedback is supportive, culturally sensitive, and respectful of the learner’s L1[cite: 1].
-*   **Research Integrity**: We continuously monitor for "system drift"—instances where the AI fails to adhere to L1 mediation or scaffolding constraints—to ensure consistent pedagogical quality[cite: 1].
+## Required approvals and governance
 
-### Transparency & Audit Trail
-*   **Automated Logging**: The system maintains an audit trail through an automated logging schema, capturing interaction timestamps and pedagogical feedback for future analysis[cite: 1].
-*   **Informed Consent**: All participants undergo a formal informed consent process conducted in their L1 prior to beginning the intervention modules[cite: 1].
+Before participant deployment, the study should:
+
+- obtain the applicable University of Jyväskylä ethical and data-protection approvals;
+- follow Finnish Research Integrity (TENK) guidance and applicable GDPR requirements;
+- document the AI provider, processing purposes, retention arrangements, data location and subprocessors;
+- define lawful basis, controller/processor responsibilities, access controls, retention periods and deletion procedures;
+- conduct a data-protection impact assessment if required by the final design.
+
+## Participant protection
+
+Participation should be voluntary and based on documented informed consent, with an unconditional right to withdraw in accordance with the approved protocol. Recruitment and study procedures should account for war, displacement and instability without inferring trauma or other protected characteristics from AI interactions.
+
+Consent and contact records should be stored separately from research data. Information should be provided in an accessible language, including Ukrainian or Russian where required by the approved recruitment and consent procedure.
+
+## Data minimization and separation
+
+A future implementation should:
+
+- assign pseudonymous participant and session identifiers;
+- keep identity, contact and consent records separate from intervention data;
+- separate raw conversational data from derived analytical metadata;
+- avoid sending unnecessary demographic information to the language model;
+- restrict access according to documented research roles;
+- avoid public release of raw conversations unless separately justified ethically and legally;
+- publish only anonymized, aggregated or otherwise non-identifying outputs where permitted.
+
+## AI-specific safeguards
+
+The final instrument should address inaccurate explanations, bias, model drift, provider changes and measurement contamination through:
+
+- researcher-approved instructional modules wherever feasible;
+- expert linguistic review and pilot testing;
+- versioned prompts, models, modules and system configurations;
+- structured logging of every intervention session;
+- monitoring against predefined pedagogical-fidelity criteria;
+- human validation of automated behavioral annotations;
+- separate instructional and standardized assessment modes;
+- independent outcome measurement.
+
+Pinned model snapshots or securely hosted open-weights models may be considered, subject to institutional security, feasibility and data-protection review. No architecture should be described as guaranteeing absolute longitudinal reproducibility.
+
+## Current repository limitation
+
+The present repository documents these requirements only. It does not yet implement participant onboarding, consent management, pseudonymization, secure storage, automated logging, drift monitoring or a university-approved API environment.
