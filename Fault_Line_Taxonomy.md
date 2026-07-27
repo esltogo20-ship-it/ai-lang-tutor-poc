@@ -1,11 +1,34 @@
-# Fault Line Taxonomy
+# Provisional Fault-Line Taxonomy
 
-This document details the targeted grammatical differences between Slavic languages (Ukrainian/Russian/Surzhyk) and English that this AI agent is designed to mediate[cite: 1].
+This document records **candidate instructional modules** for an exploratory AI-language-tutor specification. The taxonomy is not a validated syllabus, diagnostic instrument or automated classification system.
 
-| Linguistic Feature | Slavic L1 Characteristic | Target English Structure |
-| :--- | :--- | :--- |
-| **Copula Gap** | Omission of "to be" in present tense. | Mandatory copula (e.g., "I am a student"). |
-| **Article Usage** | Lack of definite/indefinite articles. | Systematic use of "a/an/the". |
-| **Aspect Mapping** | Distinctions based on perfective/imperfective verbs. | English tense-aspect system. |
+Initial targets may include recurrent cross-linguistic difficulties affecting Ukrainian- and Russian-speaking learners of English:
 
-*Note: The AI agent is instructed to identify these specific gaps and apply contrastive metalinguistic feedback to guide learners[cite: 1].*
+| Candidate feature | Relevant L1 tendency | Target English contrast |
+|---|---|---|
+| Copula use | Present-tense copula omission may be possible in Ukrainian or Russian structures. | English normally requires an overt copula, as in “I am a student.” |
+| Article use | Ukrainian and Russian do not have an English-equivalent article system. | Context-sensitive use of “a/an,” “the” or zero article. |
+| Tense-aspect mapping | Slavic perfective/imperfective distinctions do not map directly onto English tense-aspect choices. | Selection of English tense and aspect according to meaning and discourse context. |
+
+## Proposed instructional principles
+
+A future tutor should:
+
+- use English as the default language;
+- provide L1-mediated contrastive explanation only when a defined trigger is met;
+- encourage noticing, elicitation and self-repair before supplying an answer;
+- fade assistance from fuller explanation to hints, L2-only elicitation and independent production;
+- record which trigger, feedback type and fading stage were used;
+- treat system output as instructional assistance, not a final judgment of proficiency or development.
+
+## Validation status
+
+These modules require:
+
+1. corpus and needs-analysis evidence;
+2. expert review by specialists in English, Ukrainian and Russian;
+3. researcher-approved explanation content;
+4. pilot testing with the intended adult-learner population;
+5. revision based on learner comprehension, error patterns and human-coded interaction data.
+
+Surzhyk and other multilingual practices may be relevant to the research context, but they should not be treated as stable grammatical systems or automatically inferred from learner interactions.
