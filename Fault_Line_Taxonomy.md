@@ -32,3 +32,10 @@ These modules require:
 5. revision based on learner comprehension, error patterns and human-coded interaction data.
 
 Surzhyk and other multilingual practices may be relevant to the research context, but they should not be treated as stable grammatical systems or automatically inferred from learner interactions.
+## Phase 1 scope and coding additions (v1.1)
+
+- Phase 1 evidence is text-based written production; spoken-language phenomena remain outside the primary outcome unless a later protocol adds them.
+- Fault-line tagging must use the participant’s declared principal support language and reported multilingual repertoire. It must not assume a single native language or infer language from nationality.
+- Equivalent target structures and task demands must be used across the L1-mediated and L2-only comparison conditions.
+- Candidate fault-line labels remain human-reviewable annotations, not proficiency, autonomy or functional-adequacy scores.
+- Exports must retain module version, condition, task form, time point, coder/rater status and whether external assistance was declared.
