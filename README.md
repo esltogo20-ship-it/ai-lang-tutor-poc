@@ -49,3 +49,13 @@ The ordered Scrum backlog, minimum functional-POC gate and research-oriented def
 6. Complete provider, retention, data-location and subprocessor review.
 7. Conduct expert linguistic review, pilot testing and human validation.
 8. Seek the required University of Jyväskylä/TENK-aligned ethics and data-protection approvals before participant deployment.
+## Current research-plan alignment (v1.1)
+
+The current Jyväskylä research plan defines Phase 1 as a written-production study with two matched conditions:
+
+- `ai_l1_metalinguistic`: strategic L1-mediated scaffolding;
+- `ai_l2_only_comparison`: L1 mediation disabled, with modules, target forms, written tasks, scheduled time and non-L1 feedback opportunities otherwise matched.
+
+The provisional population is adult A2–B1 learners and the provisional dose is two sessions per week for 10–12 weeks. The instrument must use `principal_support_language` plus reported multilingual background and preference history, never infer language from nationality, and log adherence, condition fidelity, contamination/external AI, attrition and missingness.
+
+Phase 1 assessment uses parallel piloted written tasks under standardised conditions. Functional adequacy is independently and blindly rated across content, task requirements, comprehensibility and coherence. Autonomy questionnaires require documented adaptation and validation; behavioural logs remain indicators rather than autonomy scores. These are planned requirements until their backlog acceptance tests pass.
