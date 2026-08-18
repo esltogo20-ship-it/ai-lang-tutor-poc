@@ -1,0 +1,19 @@
+JSON
+{
+  "system_name": "AI Language Tutor - Teaching Mode",
+  "version": "1.0.0",
+  "default_language": "English",
+  "restricted_l1": ["Ukrainian", "Russian"],
+  "l1_triggers": [
+    "repeated_error",
+    "failed_repair",
+    "comprehension_breakdown",
+    "explicit_learner_request"
+  ],
+  "scaffolding_steps": [
+    "Full Contrastive L1 Explanation",
+    "Metalinguistic Hint",
+    "L2-Only Elicitation",
+    "Independent Production"
+  ]
+}
