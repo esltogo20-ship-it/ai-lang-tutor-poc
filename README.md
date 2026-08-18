@@ -1,61 +1,18 @@
-# AI Language Tutor POC
+# AI Language Tutor — Proof of Concept & Research Specification
 
-## Status
+This repository contains the exploratory architecture, technical specifications, and data logging protocols for a doctoral intervention study at the University of Jyväskylä.
 
-This repository is an **exploratory prototype specification and research-software foundation** for an AI-assisted English-learning intervention. It does not currently contain a developed, validated or deployed tutor, and it is not an autonomous assessment system.
+## Research Overview
+* **Project Title:** AI-Assisted Metalinguistic Instruction and Learner Autonomy in Adult English Learning in Ukraine
+* **Primary Objective:** To investigate whether an AI tutor using strategically restricted L1 mediation and contrastive metalinguistic scaffolding supports learner autonomy and functional L2 performance.
+* **Target Audience:** Adult English learners in Ukraine.
 
-No participant study is being conducted through this repository. Claims about pedagogical effectiveness, learner autonomy, functional English performance, GDPR compliance or longitudinal reproducibility require later implementation, institutional review, expert validation and pilot testing.
+## Key Architectural Principles
+* **English-Default Policy:** The tutor interacts in English by default, using Ukrainian/Russian L1 support only when triggered by repeated errors, failed repair, or explicit learner requests (`/config/tutor_mode.json`).
+* **Scaffold Fading:** Systematically steps down assistance from full contrastive explanations to metalinguistic hints, L2 elicitations, and independent production.
+* **Separation of Modes:** Distinguishes instructional teaching mode (`/config/tutor_mode.json`) from unassisted outcome assessment mode (`/config/assessment_mode.json`).
+* **Auditability & Version Control:** All model releases, prompts, system configurations, and module checkpoints are strictly versioned to safeguard against third-party API model drift.
 
-## Research purpose
-
-The proposed intervention investigates whether strategically restricted Ukrainian- or Russian-mediated contrastive metalinguistic scaffolding can support learner autonomy and functional English performance among adult learners in Ukraine.
-
-English is intended to remain the default interaction language. L1 support would be used selectively following repeated error, failed repair, comprehension breakdown, an explicit metalinguistic question or a learner request—not as routine translation.
-
-## Proposed pedagogical architecture
-
-The research instrument is intended to support:
-
-- contrastive metalinguistic explanations;
-- scaffold fading from fuller L1-mediated explanation to metalinguistic hints, L2-only elicitation and independent production;
-- learner-initiated help and clarification;
-- self-repair before direct correction;
-- provisional modules addressing recurrent Ukrainian-/Russian-to-English difficulties;
-- strict separation between instructional tutoring and standardized outcome assessment.
-
-The initial linguistic targets are documented in [Fault_Line_Taxonomy.md](Fault_Line_Taxonomy.md). They are candidate modules subject to corpus evidence, expert linguistic review and pilot validation.
-
-## Proposed research-data architecture
-
-A future implementation is expected to record pseudonymous participant and session identifiers, target feature, feedback type, L1 use and function, learner- versus AI-initiated assistance, clarification requests, repair attempts and outcomes, learner-agency events, timestamps, and prompt/model/module/configuration versions.
-
-Raw conversational data and derived analytical metadata should be logically separated. Automated classifications should be treated as candidate annotations and validated against human coding on a defined subset.
-
-## Ethics and governance
-
-[ETHICS_AND_PRIVACY.md](ETHICS_AND_PRIVACY.md) records design requirements for later institutional deployment. It does not certify that a GDPR-compliant environment, consent workflow, pseudonymization service, logging system or model-governance process has already been implemented.
-
-## Roadmap
-
-The ordered Scrum backlog, minimum functional-POC gate and research-oriented definition of done are maintained in [`PRODUCT_BACKLOG.md`](PRODUCT_BACKLOG.md).
-
-## Planned development
-
-1. Specify versioned instructional modules and trigger/fading rules.
-2. Implement a minimal tutor and structured logging schema.
-3. Add separate tutor and assessment modes.
-4. Add prompt, model, module and configuration versioning.
-5. Implement pseudonymization and separation of identity, consent and research data.
-6. Complete provider, retention, data-location and subprocessor review.
-7. Conduct expert linguistic review, pilot testing and human validation.
-8. Seek the required University of Jyväskylä/TENK-aligned ethics and data-protection approvals before participant deployment.
-## Current research-plan alignment (v1.1)
-
-The current Jyväskylä research plan defines Phase 1 as a written-production study with two matched conditions:
-
-- `ai_l1_metalinguistic`: strategic L1-mediated scaffolding;
-- `ai_l2_only_comparison`: L1 mediation disabled, with modules, target forms, written tasks, scheduled time and non-L1 feedback opportunities otherwise matched.
-
-The provisional population is adult A2–B1 learners and the provisional dose is two sessions per week for 10–12 weeks. The instrument must use `principal_support_language` plus reported multilingual background and preference history, never infer language from nationality, and log adherence, condition fidelity, contamination/external AI, attrition and missingness.
-
-Phase 1 assessment uses parallel piloted written tasks under standardised conditions. Functional adequacy is independently and blindly rated across content, task requirements, comprehensibility and coherence. Autonomy questionnaires require documented adaptation and validation; behavioural logs remain indicators rather than autonomy scores. These are planned requirements until their backlog acceptance tests pass.
+## Data Governance & Ethics Compliance
+* **GDPR & TENK Compliance:** Personal participant identities are strictly separated from interaction logs. All sessions are logged using pseudonymous user IDs.
+* **Human Validation:** Automated process classifications (e.g., self-repair or learner autonomy events) are logged as candidate annotations (`/schema/interaction_log.json`) and validated against human coding.
