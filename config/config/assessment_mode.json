@@ -1,0 +1,10 @@
+JSON
+{
+  "system_name": "AI Language Tutor - Assessment Mode",
+  "version": "1.0.0",
+  "default_language": "English",
+  "instructional_feedback": "disabled",
+  "l1_scaffolding": "disabled",
+  "hints_and_prompts": "disabled",
+  "purpose": "Evaluate unassisted, functional L2 performance under standardized conditions"
+}
