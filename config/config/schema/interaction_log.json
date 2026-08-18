@@ -1,0 +1,22 @@
+JSON
+{
+  "schema_name": "Interaction Log Blueprint",
+  "version": "1.0.0",
+  "logged_variables": [
+    "pseudonymous_user_id",
+    "session_id",
+    "timestamp",
+    "interaction_mode",
+    "model_version",
+    "prompt_version",
+    "target_grammatical_feature",
+    "feedback_type",
+    "l1_used_boolean",
+    "l1_function",
+    "initiated_by_learner_or_ai",
+    "repair_attempt_boolean",
+    "repair_outcome",
+    "candidate_autonomy_annotation",
+    "human_validated_boolean"
+  ]
+}
